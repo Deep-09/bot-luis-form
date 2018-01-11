@@ -2,7 +2,7 @@ var request = require('request-promise');
 var util = require('util');
 
 // replace LUIS endpoint with your own
-var luisEndpoint = 'https://api.projectoxford.ai/luis/v2.0/apps/6bbb97ee-7727-4651-aa22-f6ec704075d0?subscription-key=b46ebba7b9434807af2bb27de4719940&verbose=true';
+var luisEndpoint = 'https://westus.api.cognitive.microsoft.com/luis/v2.0/apps/62e31f0b-5705-46c1-84bf-80ef8087963f?subscription-key=67b08b9bfa8d413f8cc08ede370347bb&verbose=true&timezoneOffset=0&q=';
 var luisUrlTemplate = `${luisEndpoint}&q=%s`;
 
 function query(text) {
